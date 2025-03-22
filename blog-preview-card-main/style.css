@@ -29,12 +29,18 @@ p {
     color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
+    line-height: 1.4rem;
 }
 
 .card h2{
     font-size: 20px;
     font-weight: 800;
     color: var(--gray);
+    cursor: pointer;
+}
+
+.card h2:hover{
+    color: var(--yellow);
 }
 
 .discription{
@@ -51,12 +57,11 @@ p {
     background-color: hsl(0, 0%, 100%);
     box-shadow: 6px 6px 0px 1px rgba(0,0,0,1);  
     box-shadow: 6px 6px 0px 1px rgba(0,0,0,1);
-    cursor: pointer;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .card:hover{
-    box-shadow: 10px 10px 0px 1px rgba(0,0,0,1);
+    box-shadow: 6px 6px 0px 6px rgba(0,0,0,1);
 }
 
 .learning-button{
