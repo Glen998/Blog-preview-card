@@ -1,0 +1,76 @@
+:root {
+    --yellow: hsl(47, 88%, 63%);
+}
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body{
+    background-color: var(--yellow);
+    font-family: "Figtree", sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Hide scrollbars */
+    
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.card{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 1rem;
+    width: 20%;
+    padding: 1rem 1rem 1.5rem 1rem;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 5px 5px 0px 1px rgba(0,0,0,1);  
+}
+
+.learning-button{
+    background-color: var(--yellow);
+    border-radius: 1rem;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 18px;
+}
+
+.illustration-article{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card .profile-info{
+    display: flex;
+    flex-direction: row ;
+    width: auto;
+    align-items: center;
+}
+
+.profile-picture{
+    width: 30px;
+    height: 30px; /* Ensures the image remains a square */
+    border-radius: 50%; /* Makes it a perfect circle */
+    object-fit: cover; /* Prevents distortion */
+}
+
+.name{
+    font-weight: bold;
+    margin-left: 10px;
+}
